@@ -1,0 +1,113 @@
+.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__s) {
+    #html-body {
+        &.cms-home {
+            .page-wrapper {
+                .page-main {
+                    .columns {
+                        .column {
+                            [data-content-type="block"] {
+                                .widget {
+                                    [data-content-type="row"] {
+                                        [data-enable-parallax="0"] {
+                                            .pagebuilder-column-group {
+                                                .pagebuilder-column {
+                                                    margin: 4px;
+
+                                                    a {
+                                                        text-decoration: none;
+                                                    }
+
+                                                    .banner__txt__wrapper {
+                                                        height: 32vh;
+                                                        display: flex;
+                                                        align-items: center;
+                                                        justify-content: center;
+                                                        text-align: center;
+
+                                                        .banner__txt {
+                                                            /*display: grid;
+                                                            text-align: center;
+                                                            padding: 60px 60px;*/
+                                                            &:hover {
+                                                                background-color: #1a1a1a;
+
+                                                            }
+                                                            span {
+                                                                display: inline-block;
+                                                                width: 100%;
+                                                                text-transform: uppercase;
+                                                            }
+                                                            .banner__xl-txt {
+                                                                font-size: 35px;
+                                                                color: #fff;
+                                                                font-weight: 100;
+
+                                                            }
+
+                                                            .banner__sm-txt {
+                                                                color: #fff;
+                                                                text-transform: uppercase;
+                                                            }
+
+                                                        }
+                                                    }
+
+                                                    .cuadro1 {
+                                                        background-color: #fd6b6b;
+                                                    }
+
+                                                    .cuadro2 {
+                                                        background-color: #f3f3f3;
+                                                        color: #333;
+
+                                                        .banner__lg-txt2 {
+                                                            font-size: 20px;
+                                                        }
+
+                                                        .banner__sm-txt2 {
+                                                            color: #0ab3a3;
+                                                            font-size: 14px;
+                                                        }
+                                                    }
+
+                                                    .cuadro3 {
+                                                        background-color: #0ab3a3;
+
+                                                        .banner__txt {
+                                                            color: #fff;
+                                                        }
+
+                                                        .banner__lg-txt3 {
+                                                            text-transform: uppercase;
+                                                        }
+                                                    }
+
+                                                    .cuadro4 {
+                                                        background-color: #f3f3f3;
+                                                        color: #333;
+
+                                                        .banner__lg-txt4 {
+                                                            font-size: 20px;
+                                                        }
+
+                                                        .banner__sm-txt4 {
+                                                            font-size: 14px;
+                                                        }
+
+                                                        .banner__xs-txt4 {
+                                                            font-size: 10px;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,51 @@
+/*.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__m) {
+...
+}*/
+.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__s) {
+    #html-body {
+        &.cms-home {
+            .page-wrapper {
+                .page-main {
+                    .columns {
+                        .column {
+                            [data-content-type="block"] {
+                                .widget {
+                                    [data-content-type="row"] {
+                                        [data-enable-parallax="0"] {
+
+
+
+                                            .pagebuilder-slider {
+                                                .slick-list {
+                                                    .slick-track {
+                                                        .slick-slide {
+                                                            [data-content-type="slide"] {
+                                                                [data-element="empty_link"] {
+                                                                    .pagebuilder-slide-wrapper {
+                                                                        /*background-size: contain;
+                                                                        background-position: top;
+                                                                        min-height: 300px;
+                                                                        background-repeat: no-repeat;*/
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+/*& when (@media-common = true) {
+
+}*/
+
+

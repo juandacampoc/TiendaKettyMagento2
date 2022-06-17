@@ -1,0 +1,26 @@
+{
+    "name": "juancampo/module-ketty",
+    "description": "Informacion de nosotros ketty",
+    "type": "magento2-module",
+    "license": "GPL-3.0",
+    "authors": [
+        {
+            "name": "Mage2Gen",
+            "email": "info@mage2gen.com"
+        },
+        {
+            "name": "juan david campo chara",
+            "email": "juandacampo@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "JuanCampo\\Ketty\\": ""
+        }
+    }
+}
