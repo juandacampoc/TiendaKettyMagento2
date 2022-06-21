@@ -16,6 +16,7 @@
                                                 .pagebuilder-column {
                                                     margin: 4px;
 
+
                                                     a {
                                                         text-decoration: none;
                                                     }
@@ -114,3 +115,45 @@
         }
     }
 }
+
+//ESTILOS PARA TABLET
+.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__s) {
+    #html-body {
+        &.cms-home {
+            .page-wrapper {
+                .page-main {
+                    .columns {
+                        .column {
+                            [data-content-type="block"] {
+                                .widget {
+                                    [data-content-type="row"] {
+                                        [data-enable-parallax="0"] {
+                                            .pagebuilder-column-group {
+                                                justify-content: center;
+                                                flex-wrap: wrap;
+                                                .pagebuilder-column {
+                                                    min-width: 48%;
+                                                    [data-content-type="html"]{
+                                                        .banner__txt__wrapper{
+                                                            height: 42vh;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*
+//ESTILOS PARA LAPTOP
+.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__l) {
+
+}*/

@@ -29,7 +29,7 @@
                                                                         text-align: center;
                                                                         margin-bottom: 20px;
                                                                         margin-top: 20px;
-                                                                        box-shadow: 2px 3px 3px 0px;
+                                                                        /*box-shadow: 2px 3px 3px 0px;*/
                                                                         border: 1px solid #00000029;
                                                                         .product-item-details{
                                                                             text-align: center;
@@ -120,3 +120,49 @@
         }
     }
 }
+//ESTILOS PARA TABLET
+.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__s) {
+    #html-body {
+        &.cms-home {
+            .page-wrapper {
+                .page-main {
+                    .columns {
+                        .column {
+                            [data-content-type="block"] {
+                                .widget {
+                                    [data-content-type="row"] {
+                                        [data-enable-parallax="0"] {
+                                            [data-content-type="products"]{
+                                                .block{
+                                                    .block-content{
+                                                        .products-grid{
+                                                            .product-items{
+                                                                display: flex;
+                                                                flex-wrap: wrap;
+                                                                justify-content: center;
+                                                                align-items: center;
+                                                                .product-item{
+                                                                    max-width: 46%;
+                                                                    margin: 14px;
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*//ESTILOS PARA LAPTOP
+.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__l) {
+
+}*/
