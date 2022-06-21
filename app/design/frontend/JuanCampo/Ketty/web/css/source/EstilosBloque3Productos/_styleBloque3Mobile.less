@@ -140,7 +140,7 @@
                                                                 display: flex;
                                                                 flex-wrap: wrap;
                                                                 justify-content: center;
-                                                                align-items: center;
+                                                                align-items: flex-start;
                                                                 .product-item{
                                                                     max-width: 46%;
                                                                     margin: 14px;
@@ -162,7 +162,43 @@
     }
 }
 
-/*//ESTILOS PARA LAPTOP
+//ESTILOS PARA LAPTOP
 .media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__l) {
-
-}*/
+    #html-body {
+        &.cms-home {
+            .page-wrapper {
+                .page-main {
+                    .columns {
+                        .column {
+                            [data-content-type="block"] {
+                                .widget {
+                                    [data-content-type="row"] {
+                                        [data-enable-parallax="0"] {
+                                            [data-content-type="products"]{
+                                                .block{
+                                                    .block-content{
+                                                        .products-grid{
+                                                            .product-items{
+                                                                justify-content: flex-start;
+                                                                /*display: flex;
+                                                                flex-wrap: wrap;
+                                                                align-items: flex-start;*/
+                                                                .product-item{
+                                                                    max-width: 23%;
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
