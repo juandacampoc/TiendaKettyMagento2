@@ -78,3 +78,6 @@ script.ssh
 setup/
 var/
 vendor/
+grunt-config.json
+package.json
+Gruntfile.js
