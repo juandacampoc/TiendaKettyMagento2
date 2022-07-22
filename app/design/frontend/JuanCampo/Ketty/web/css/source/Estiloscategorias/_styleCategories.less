@@ -1,0 +1,28 @@
+.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__m){
+    .page-wrapper{
+        .sections{
+            text-align: center;
+            .section-items{
+                .section-item-content{
+                    background-color: #fff;
+                    position: absolute;
+                    left: 40%;
+                    top: 62px;
+                    z-index: 40;
+                    .navigation{
+                        background-color: inherit;
+                        .ui-menu{
+                            .level-top{
+                                font-weight: 400;
+                                &:hover{
+                                    border-bottom: 1px solid #0ab3a3;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+

@@ -1,0 +1,68 @@
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <container name="div.content.links" htmlTag="div" htmlClass="content-links" after="-"/>
+        <move element="div.content.links" destination="header-wrapper" before="minicart-wrapper"/>
+        <move element="top.links" destination="div.content.links" after="-"/>
+        <referenceContainer name="div.content.links">
+            <block class="Magento\Framework\View\Element\Template" name="bloquepopup"
+                   template="Magento_Theme::popup.phtml"/>
+        </referenceContainer>
+
+        <referenceContainer name="footer">
+            <referenceBlock name="form.subscribe" remove="true"/>
+            <block class="Magento\Cms\Block\Block" name="bloque_footer" before="-">
+                <arguments>
+                    <argument name="block_id" xsi:type="string">block_footer_id</argument>
+                </arguments>
+            </block>
+            <referenceContainer name="footer_links" remove="true"/>
+            <referenceBlock name="report.bugs" remove="true"/>
+        </referenceContainer>
+
+        <!-- <referenceContainer name="header.panel.wrapper" remove="true"/> -->
+
+        <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+        <!-- ESTOS SON LOS BLOQUES CREADOS EN EL TEMPLATE PARA AGREGAR CONTENIDO PERSONALIZADO A EL LAYOUT -->
+        <!-- <referenceContainer name="header-wrapper">
+             <block class="Magento\Framework\View\Element\Template" name="bloqueNuevo"
+                    template="Magento_Theme::bloques.phtml"/>
+         </referenceContainer>
+
+         <referenceContainer name="footer-container">
+             <block class="Magento\Framework\View\Element\Template" name="bloqueFooterNuevo"
+                    template="Magento_Theme::bloqueFooterNew.phtml"/>
+         </referenceContainer>-->
+
+
+        <!-- AQUI AGREGRE UN BLOQUE DEL CMS AL LAYOUT
+        +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+        <!--<block class="Magento\Cms\Block\Block" name="adfooter">
+            <arguments>
+                <argument name="block_id" xsi:type="string">Block-Footer</argument>
+            </arguments>
+        </block>-->
+
+        <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+
+        <!-- ESTOS SON LOS BLOQUES DEL FOOTER QUE ELIMINE CON LA PROPIEDAD REMOVE -->
+
+
+        <!--<referenceBlock name="absolute_footer" remove="true"/>-->
+        <!--<referenceBlock name="store_switcher" remove="true"/>
+        <referenceBlock name="footer_links" remove="true"/>
+        <referenceBlock name="copyright" remove="true"/>
+        <referenceBlock name="form.subscribe" remove="true"/>-->
+
+
+        <!--<block class="Magento\Framework\View\Element\Template" name="bloqueFooter" template="Magento_Theme::bloquefooter.phtml" />-->
+
+
+        <!--<move element="navigation.sections" destination="header-wrapper" after="-" />   MOVER UN BLOQUE A OTRO-->
+
+
+    </body>
+</page>
+
+
